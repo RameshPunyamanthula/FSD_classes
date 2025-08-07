@@ -1,0 +1,80 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+    background-color: black;
+    perspective: 1000px;
+}
+.cube{
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 0;
+    animation: myanim 5s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.cube div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(23, 171, 60);
+    position:absolute;
+    border: 2px solid white;
+    font-size: 50px;
+    opacity: 0.5;
+}
+.cubnoid{
+    height: 200px;
+    width: 400px;
+    position: relative;
+    right: 0;
+    animation: myanim 5s infinite linear;
+    transform-style: preserve-3d;
+}
+
+.cubnoid div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 400px;
+    background-color: rgb(40, 38, 203);
+    position:absolute;
+    border: 2px solid white;
+    font-size: 50px;
+}
+
+#right ,#left{
+    height: 200px;
+    width: 200px;
+}
+
+.left{
+    transform: rotateY(90deg) translateZ(100px);
+}
+.right{
+    transform: rotateY(90deg) translateZ(-100px);
+}
+.top{
+    transform: rotateX(90deg) translateZ(100px);
+}
+.bottom{
+    transform: rotateX(90deg) translateZ(-100px);
+}
+.front{
+    transform: translateZ(100px);
+}
+.back{
+    transform: translateZ(-100px);
+    
+}
+
+@keyframes myanim {
+    100%{
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+}

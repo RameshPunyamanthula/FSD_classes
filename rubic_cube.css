@@ -1,0 +1,89 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+    background: linear-gradient(to right bottom,lightpink,lightblue);
+    perspective: 1000px;
+}
+.cube{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    animation: myanim 3s infinite linear;
+    transform-style: preserve-3d;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.front,.back,.left,.right,.top,.bottom{
+    height: 300px;
+    width: 300px;
+    /* background-color: rgb(40, 38, 203); */
+    position:absolute;
+    /* border: 2px solid white; */
+    font-size: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+
+}
+
+
+.left{
+    transform: rotateY(90deg) translateZ(150px);
+}
+.right{
+    transform: rotateY(90deg) translateZ(-150px);
+}
+.top{
+    transform: rotateX(90deg) translateZ(150px);
+}
+.bottom{
+    transform: rotateX(90deg) translateZ(-150px);
+}
+.front{
+    transform: translateZ(150px);
+}
+.back{
+    transform: translateZ(-150px);
+    
+}
+@keyframes myanim {
+    100%{
+        transform: rotateX(180deg) rotateY(180deg);
+    }
+}
+.b1{
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.b2{
+    background-color:orange;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.b3{
+    background-color:blue;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.b4{
+    background-color: green;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.b5{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.b6{
+    background-color: yellow;
+    border: 2px solid black;
+    border-radius: 5px;
+}

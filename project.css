@@ -1,0 +1,757 @@
+* {
+    background: url('https://github.com/GangadharPrathap/FSD-class-codes/blob/main/vecteezy_geometric-hexagon-vector-white-background-technology-wallpaper_24221162.jpg?raw=true') no-repeat;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.mega {
+    color: #004080;
+    font-family: "Josefin Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 1500;
+    font-style: italic;
+}
+
+
+/* home */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 5px;
+    width: 100%;
+    height: 100px;
+    padding: 0 40px;
+    background: linear-gradient( 90deg, #000000, /* deep black */
+    #1a1a1a, /* dark charcoal */
+    #2f2e2e, /* medium gray highlight */
+    #1a1a1a, /* dark charcoal */
+    #000000/* deep black */
+    );
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.etblock {
+    width: 100px;
+    height: 200px;
+}
+
+
+/* Logo */
+
+.header-container h2 {
+    font-family: "Mulish", sans-serif;
+    font-weight: 900;
+    color: white;
+    background-color: #ff4d4d;
+    width: 120px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin: 0;
+    border-radius: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Marquee Text */
+
+.header-container marquee h1 {
+    color: #ffffff;
+    font-family: "Orbitron", sans-serif;
+    font-size: 28px;
+    margin: 0 30px;
+}
+
+
+/* Login/Reg Button */
+
+.LogReg {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.LogReg h1 {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #007f7f;
+    font-size: 18px;
+    font-family: "Mulish", sans-serif;
+    transition: all 0.3s ease;
+    margin-right: 90px;
+}
+
+.LogReg h1:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: #007f7f;
+    color: #fff101;
+}
+
+
+/* Navigation Links */
+
+.navigation-links {
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-family: "Mulish", sans-serif;
+    z-index: 50;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navigation-links nav {
+    display: flex;
+    gap: 60px;
+}
+
+.navigation-links a {
+    text-decoration: none;
+    font-size: 23px;
+    color: #007f7f;
+    transition: all 0.2s ease;
+}
+
+.navigation-links a.active,
+.navigation-links a:hover {
+    transform: scale(1.15);
+    color: #bc0000;
+    font-weight: 600;
+}
+
+
+/* Banner Image */
+
+.header-image-container {
+    position: relative;
+}
+
+.header-image-container :nth-child(1) {
+    position: absolute;
+    color: blue;
+    font-family: "Quantico", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    left: 400px;
+    top: 150px;
+    font-size: 70px;
+    font-family: "ABeeZee", sans-serif;
+    font-weight: 770;
+}
+
+.header-image-container :nth-child(2) {
+    position: absolute;
+    top: 200px;
+    font-size: 290px;
+    left: 110px;
+    color: #023202;
+}
+
+.header-image-container :nth-child(3) {
+    position: absolute;
+    top: 440px;
+    font-size: 50px;
+    left: 280px;
+    color: #052c07;
+    /* medium dark green */
+}
+
+.header-image-container :nth-child(4) {
+    position: absolute;
+    top: 500px;
+    font-size: 50px;
+    left: 240px;
+    color: #052c07;
+    /* medium dark green */
+}
+
+.header-image-container :nth-child(5) {
+    position: absolute;
+    top: 560px;
+    font-size: 50px;
+    left: 240px;
+    color: #052c07;
+    /* medium dark green */
+}
+
+.header-image-container img:nth-child(6) {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    opacity: 0.40;
+}
+
+.header-image-container img:nth-child(7):hover {
+    transform: translateY(-20px);
+    transition: 0.5s ease;
+    overflow: hidden;
+}
+
+.header-image-container img:nth-child(7) {
+    position: absolute;
+    top: 10%;
+    left: 55%;
+    width: 1100px;
+    height: 720px;
+    z-index: 1;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.features {
+    width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    width: 600px;
+    height: 480px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    position: relative;
+    right: 400px;
+    background: linear-gradient(135deg, palegreen, #d4fcdc 10%, #d1f0ff 80%);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.card p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.list {
+    text-align: left;
+    position: relative;
+    left: 10px;
+    padding: 15px;
+    font-size: 25px;
+}
+
+
+/* Developers */
+
+.container {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #5c4d7d;
+}
+
+.developers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.developer {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(20px);
+    border-radius: 12px;
+    padding: 20px;
+    font-weight: 800;
+    border: 1px solid rgba(0, 255, 255, 0.4);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    transition: all 0.4s ease;
+    transform: scale(1);
+}
+
+.developer:hover {
+    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.25), 0 4px 20px rgba(0, 255, 255, 0.2);
+    transform: scale(1.03);
+}
+
+.hat {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+    display: flex;
+    justify-self: auto;
+    align-self: auto;
+}
+
+.gray {
+    background: url(https://github.com/GangadharPrathap/medical_webiste/blob/main/pranoy.jpg?raw=true);
+    background-size: cover;
+}
+
+.blue {
+    background: url(https://github.com/GangadharPrathap/medical_webiste/blob/main/mine.jpg?raw=true);
+    background-size: cover;
+}
+
+.red {
+    background: url(https://github.com/GangadharPrathap/medical_webiste/blob/main/sudheer.jpg?raw=true);
+    background-size: cover;
+}
+
+.green {
+    background: url(https://github.com/GangadharPrathap/medical_webiste/blob/main/ramesh.jpg?raw=true);
+    background-size: cover;
+}
+
+.yellow {
+    background: url(https://github.com/GangadharPrathap/medical_webiste/blob/main/venkat.jpg?raw=true);
+    background-size: cover;
+}
+
+
+/* Contact */
+
+header {
+    background: linear-gradient(135deg, #009688, #00bcd4);
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 70px;
+    font-family: "Quantico", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.contact-section {
+    max-width: 1100px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.contact-info,
+.contact-form {
+    flex: 1 1 450px;
+    padding: 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info:hover,
+.contact-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    background: linear-gradient(to bottom right, #a3f0dd, #d0f3ff);
+    color: #02475e;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    font-size: 0.95rem;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #00796b;
+}
+
+.contact-form {
+    background: white;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    color: #00796b;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #4db6ac;
+    box-shadow: 0 0 6px rgba(0, 150, 136, 0.2);
+    outline: none;
+}
+
+.contact-form button {
+    background-color: #26a69a;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #00897b;
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+    }
+    .contact-info,
+    .contact-form {
+        padding: 30px 20px;
+    }
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.etblock {
+    width: 100px;
+    height: 200px;
+}
+
+
+/* Information */
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    color: blue;
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 95%;
+    margin: auto;
+    height: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    gap: 0 0 0 35;
+}
+
+.info-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.info-image {
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    padding: 70px;
+    position: relative;
+    right: 20px;
+    transition: transform 0.3s;
+}
+
+.info-image:hover {
+    transform: scale(1.05);
+}
+
+.info-content {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+.info-content h2 {
+    font-size: 50px;
+    margin: 0;
+    color: rgb(2, 195, 154);
+}
+
+.info-date {
+    font-size: 20px;
+    color: gray;
+}
+
+.info-content p {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.read-more {
+    margin-top: 10px;
+    background: rgb(2, 195, 154);
+    color: white;
+    padding: 20px 25px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.read-more:hover {
+    background: #4a148c;
+    transform: scale(1.05);
+}
+
+.separator {
+    width: 10%;
+    height: 2px;
+    border-radius: 5%;
+    border: 2px solid brown;
+    background-color: brown;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.para {
+    font-size: 50px;
+    width: 1000px;
+}
+
+.lol {
+    width: auto;
+    height: auto;
+    display: grid;
+    justify-self: center;
+    align-self: center;
+}
+
+
+/* Schedule */
+
+.booking-section {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #e6f0ff, #ffffff);
+    border-radius: 30px;
+    margin: 40px auto;
+    max-width: 1200px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    gap: 10s5 0 0 0;
+}
+
+.booking-title {
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #004080;
+    margin-bottom: 10px;
+    transform: scale(1.2);
+}
+
+.booking-line {
+    width: 100px;
+    border: 2px solid #007f7f;
+    margin-bottom: 60px;
+}
+
+.booking-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.booking-info {
+    flex: 1 1 400px;
+    max-width: 500px;
+}
+
+.booking-subheading {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.booking-details {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.booking-doctor-img {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+}
+
+.booking-doctor-img:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.booking-text p {
+    margin: 8px 0;
+    font-weight: 600;
+    color: #333;
+    font-size: 22px;
+    width: 300px;
+}
+
+.booking-form-wrapper {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 25px;
+    margin-left: 170px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+.form-label {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 16px;
+}
+
+.form-select,
+.form-input {
+    width: 100%;
+    padding: 8px;
+    font-size: 22px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    margin-bottom: 12px;
+    transition: 0.3s ease;
+}
+
+.form-input2 {
+    width: 93%;
+    /* 40px is too small for a date input */
+    padding: 8px;
+    font-size: 24px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    margin-bottom: 12px;
+    transition: 0.3s ease;
+}
+
+#dev1 {
+    position: relative;
+    left: 400px;
+}
+
+#dev2 {
+    position: relative;
+    left: 400px;
+}
+
+.form-select:focus,
+.form-input:focus {
+    border-color: #007f7f;
+    outline: none;
+}
+
+.booking-submit-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    background-color: aqua;
+    color: grey;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.booking-submit-btn:hover {
+    background-color: grey;
+}

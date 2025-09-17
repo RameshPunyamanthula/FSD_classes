@@ -1,0 +1,72 @@
+body{
+    font-family: sans-serif;
+    color: aliceblue;
+    background-color: rgba(140, 173, 173, 0.836);
+}
+header{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 30px;
+    background-color: rgb(51, 198, 32);
+    box-shadow: 0 5px 10px black;
+    font-size: 24px;
+}
+.logo img{
+    height: 50px;
+}
+nav a{
+    margin: 0 5px;
+    text-decoration: none;
+    color: black;
+    padding: 10px 10px;
+}
+.logout{
+    background-color: blue;
+    color: white;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    height:50px;
+    width: 110px;
+    display: block;
+
+}
+
+.navbar{
+    display: block;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px;
+    background: linear-gradient(to right,rgb(143, 143, 152),rgb(205, 110, 110));
+}
+.textdeco h1{
+    font-weight: 700px;
+    font-size: 48px;
+    line-height: 1.4;
+}
+.textdeco .green{
+    color: green;
+}
+.textdeco .globe{
+    color: yellow;
+}
+
+.menu{
+    display: none;
+}
+
+@media (min-width :0px ) and (max-width : 600px) {
+    .navbar{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+}
+

@@ -1,0 +1,83 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f9fa;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.logo img {
+  height: 50px;
+}
+nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+.logout {
+  display: block;
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+  background: linear-gradient(to right, #edf3f8, #f7f9fb);
+}
+
+.text-content h1 {
+  font-size: 48px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+.text-content .green {
+  color: #007f3e;
+}
+.text-content .globe {
+  color: #f4b400;
+}
+
+.image-content {
+  position: relative;
+}
+.profile-photo {
+  width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+.card {
+  position: absolute;
+  bottom: -20px;
+  left: 30px;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+.card .small-logo {
+  height: 40px;
+}
+
+
+@media screen and (max-width: 900px) {
+  .logout {
+    display: none;
+    }
+}

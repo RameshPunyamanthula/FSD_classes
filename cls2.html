@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions</title>
+    <script>
+        function fun() {
+            alert("Let's Goooo");
+        }
+        function fun1(event) {
+            alert(event.target.value + " button clicked");
+        }
+    </script>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+
+        }
+        button{
+            width: 200px;
+            height: 50px;
+            margin: 10px;
+            font-size: 20px;
+            background-color: lightblue;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="fun()">
+        Click
+    </button>
+    <button ondblclick="fun()">
+        Double Click
+    </button>
+    <button onmouseup="fun()">
+        Mouse Up
+    </button>
+    <button onmousedown="fun()">
+        Mouse Down
+    </button>
+    <button onmouseover="fun()">
+        Mouse Over
+    </button>
+    <button onmouseleave="fun()">
+        Mouse Leave
+    </button>
+    <button onmouseout="fun()">
+        Mouse Out
+    </button>
+    <button onmousemove="fun()">
+        Mouse Move
+    </button>
+    <button oncontextmenu="fun()">
+        Right Click
+    </button>
+    <button onkeydown="fun()">
+        Key Down
+    </button>
+    <button onkeyup="fun()">
+        Key Up
+    </button>
+    <button onkeypress="fun()">
+        Key Press
+    </button>
+    <button onfocus="fun()">
+        Focus   
+    </button>
+    <button onblur="fun()">
+        Blur
+    </button>
+    <button onclick="fun1(event)"> 
+        Click Me
+    </button>
+</body>
+</html>

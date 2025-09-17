@@ -1,0 +1,36 @@
+.c1{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    position: relative;
+    animation: myani 2s linear infinite ;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-timing-function: ease-in-out;
+
+}
+.c2{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(17, 0, 255);
+    position: relative;
+    animation: myani 2s linear infinite;
+    animation-timing-function: ease;
+
+}
+.c3{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(17, 255, 0);
+    position: relative;
+    animation: myani 2s linear infinite;
+    animation-timing-function: ease-out;
+
+}
+@keyframes myani {
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 200px;
+    }
+}

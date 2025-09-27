@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window - On functions</title>
+</head>
+    <script>
+        function fun() {
+            window.alert("Hello, this is a function in the window object!");
+        }
+
+        window.onblur = function() {
+            console.log("Page has loaded successfully!");
+        };
+        window.onfocus = function() {
+            console.log("Page is focused!");
+        };
+        window.onresize = function() {
+            console.log("Window has been resized!");
+        };
+        window.onload = function() {
+            console.log("Window has loaded!");
+        };
+        window.onscroll = function() {
+            console.log("Page has been scrolled!");
+        };
+
+    </script>
+    <style>
+        body{
+            height: 150svh;
+            width: 100%;
+        }
+    </style>
+<body>
+    
+    
+</body>
+</html>

@@ -1,0 +1,200 @@
+        * {
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-image: url("sthe.png");
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .login-container {
+            background: linear-gradient(135deg, #2a2a2a 0%, #444 20%, #888 50%, #444 80%, #2a2a2a 100%);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+            left: 450px;
+            width: 500px;
+            text-align: center;
+        }
+        
+        .excited-welcome {
+            font-size: 36px;
+            font-weight: 700;
+            color: #00b3ff;
+            margin-bottom: 15px;
+            letter-spacing: 1.5px;
+        }
+        
+        .login-container h2 {
+            font-size: 28px;
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .login-container p {
+            color: #cccccc;
+            margin-bottom: 30px;
+            font-size: 18px;
+        }
+        
+        .social-login {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+        
+        .social-login button {
+            flex: 1;
+            padding: 15px 0;
+            border: none;
+            border-radius: 8px;
+            background: #f1f1f1;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            transition: transform 0.2s ease;
+        }
+        
+        .social-login button:hover {
+            transform: scale(1.05);
+            background-color: #e0e0e0;
+        }
+        
+        .social-login .google {
+            color: #db4437;
+        }
+        
+        .social-login .facebook {
+            color: #3b5998;
+        }
+        
+        .divider {
+            margin: 30px 0;
+            position: relative;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .divider .line {
+            border-top: 1.5px solid #ddd;
+            flex-grow: 1;
+            margin: 0 15px;
+            height: 0;
+        }
+        
+        .divider span {
+            background: #2a2a2a;
+            padding: 0 15px;
+            color: #aaa;
+            font-size: 18px;
+            white-space: nowrap;
+        }
+        
+        .toggle-buttons {
+            display: flex;
+            margin-bottom: 30px;
+            justify-content: center;
+        }
+        
+        .toggle-buttons button {
+            flex: 1;
+            padding: 15px 0;
+            border: none;
+            background: #ddd;
+            font-weight: 700;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 30px;
+            margin: 0 8px;
+            transition: transform 0.2s ease, background 0.3s;
+        }
+        
+        .toggle-buttons button:hover {
+            transform: scale(1.05);
+        }
+        
+        .toggle-buttons .active {
+            background: #0075ff;
+            color: white;
+        }
+        
+        .login-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            text-align: left;
+        }
+        
+        .login-form label {
+            font-size: 18px;
+            color: #e6e6e6;
+            font-weight: 600;
+        }
+        
+        .login-form input {
+            padding: 15px 12px;
+            border: 1.5px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        
+        .login-form a {
+            text-align: right;
+            font-size: 16px;
+            color: #00b3ff;
+            text-decoration: none;
+            cursor: pointer;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+        
+        .login-form a:hover {
+            transform: scale(1.04);
+            color: #66d9ff;
+        }
+        
+        .login-btn {
+            margin-top: 25px;
+            padding: 18px;
+            background: linear-gradient(to right, #0075ff, #00b3ff);
+            color: white;
+            font-weight: 700;
+            font-size: 20px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        
+        .login-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .signup-link {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #dddddd;
+        }
+        
+        .signup-link a {
+            color: #00b3ff;
+            text-decoration: none;
+            font-weight: 600;
+        }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link href="https://db.onlinewebfonts.com/c/58045dabdc3a361cb9bb9faf2f1dd1f3?family=Digital-7+V7" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(14, 109, 117);
+            font-family: "Digital-7 V7";
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100svh;
+            width: 100%;
+        }
+        .parent{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 50svh;
+            width: 50%;
+        }
+        .start,.stop{
+            margin-top: 10px;
+            background-color: chocolate;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .start:hover{
+            opacity: 0.5;
+        }
+        .time{
+            height: 100px;
+            width: 100px;
+            background-color: rgb(0, 4, 71);
+            display: flex;
+            align-items: center;
+            border-radius: 70px;
+            justify-content: center;
+            color: aliceblue;
+        }
+        .minutes,.seconds{
+            background-color: rgb(3, 7, 120);
+            border-radius: 10px;
+            height: 30px;
+            width: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgb(255, 255, 255);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="time">
+            <div class="minutes"></div>:
+            <div class="seconds"></div>
+        </div>
+        <div class="buttons">
+        <button class="start" onclick="start()" >Start</button>
+        <button class="stop" onclick="Stop()" >Stop</button>
+        </div>
+    </div>
+    <script>
+        var time ;
+var clears;
+function timer() {
+    time -= 1;
+    //console.log(parseInt(time/60),':',time%60);
+    document.getElementsByClassName("minutes")[0].innerHTML = parseInt(time/60);
+    document.getElementsByClassName("seconds")[0].innerHTML = time%60;
+}
+
+function start() {
+    time = 120;
+    clears = setInterval(timer,1000);
+
+}
+function Stop() {
+    clearInterval(clears);
+    document.getElementsByClassName("minutes")[0].innerHTML = 0;
+    document.getElementsByClassName("seconds")[0].innerHTML = 0;
+
+}
+    </script>
+</body>
+</html>
